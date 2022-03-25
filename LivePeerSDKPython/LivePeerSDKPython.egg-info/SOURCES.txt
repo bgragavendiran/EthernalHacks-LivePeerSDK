@@ -1,0 +1,8 @@
+README.rst
+setup.cfg
+setup.py
+LivePeerSDKPython/LivePeerSDKPython.egg-info/PKG-INFO
+LivePeerSDKPython/LivePeerSDKPython.egg-info/SOURCES.txt
+LivePeerSDKPython/LivePeerSDKPython.egg-info/dependency_links.txt
+LivePeerSDKPython/LivePeerSDKPython.egg-info/requires.txt
+LivePeerSDKPython/LivePeerSDKPython.egg-info/top_level.txt
