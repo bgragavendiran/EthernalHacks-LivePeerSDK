@@ -8,8 +8,9 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name='LivePeerSDK',
-    version='0.7',
+    version='1.0',
     license='MIT',
+    description='A simple comprehensive Python Wrapper for LivePeerAPI.',
     author="Ragavendiran Balasubramanian",
     author_email='bgragavendiran@gmail.com',
     package_dir={'': 'src'},

@@ -53,10 +53,10 @@ pip install LivePeerSDK
 ```
 
 ## EXAMPLES
-Dillinger is currently extended with the following plugins.
-Instructions on how to use them in your own application are linked below.
+
+Instructions on how to use LivePeerSDK in your own project can be inferred from below.
 ```
-from LivePeerSDK import LivePeerSDK
+from LivePeerSDK_Python.LivePeerSDK import LivePeerSDK
 LivePeer=LivePeerSDK(str(<YOUR_LIVEPEER_API_KEY>))
 
 for asset in LivePeer.listAssets():

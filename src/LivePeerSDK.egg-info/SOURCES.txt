@@ -3,10 +3,10 @@ MANIFEST.in
 README.md
 pyproject.toml
 setup.py
-src/LivePeerSDK/LivePeerSDK.py
-src/LivePeerSDK/__init__.py
 src/LivePeerSDK.egg-info/PKG-INFO
 src/LivePeerSDK.egg-info/SOURCES.txt
 src/LivePeerSDK.egg-info/dependency_links.txt
 src/LivePeerSDK.egg-info/requires.txt
 src/LivePeerSDK.egg-info/top_level.txt
+src/LivePeerSDK_Python/LivePeerSDK.py
+src/LivePeerSDK_Python/__init__.py
