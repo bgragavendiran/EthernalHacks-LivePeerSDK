@@ -1,4 +1,22 @@
-# LivePeerSDK
+Metadata-Version: 2.1
+Name: LivePeerSDK
+Version: 0.5
+Summary: UNKNOWN
+Home-page: https://pypi.org/project/LivePeerPython/0.5/
+Author: Ragavendiran Balasubramanian
+Author-email: bgragavendiran@gmail.com
+License: MIT
+Project-URL: Git Link, https://github.com/RAGANITHI/EthernalHacks-LivePeerSDK
+Keywords: LivePeerSDK
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# LivePeerSDKPython
 ## Make LivePeerAPICalls from Python
 ## License : MIT
 #####
@@ -31,7 +49,7 @@
 
 ![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)
 
-LivePeerSDK for Python Developed by Team Heptre,
+LivePeerPythonSDK Developed by Team Heptre,
 is a realtime PythonSDK that directly interlinks with the LivePeerAPI 
 endpoints which makes the life of the user simple.
 
@@ -42,21 +60,19 @@ endpoints which makes the life of the user simple.
 - The Library is highly modular and plug and play in nature
 - Forget handling requests just make the function call.
 - The request responses are all dicts 
-- Detailed Docs Feeling Stuck Anywhere?? help(<functionName>) will get you right back on track.
 
 ## Installation
 
-LivePeerSDK requires [python3](https://www.python.org/downloads/) to run.
+LivePeerPythonSDK requires [python3](https://www.python.org/downloads/) to run.
 
 ```sh
-pip install LivePeerSDK
+pip install LivePeerPython
 ```
 
 ## EXAMPLES
 Dillinger is currently extended with the following plugins.
 Instructions on how to use them in your own application are linked below.
 ```
-from LivePeerSDK import LivePeerSDK
 LivePeer=LivePeerSDK(str(<YOUR_LIVEPEER_API_KEY>))
 
 for asset in LivePeer.listAssets():
@@ -252,5 +268,7 @@ _______________
 >:returns
 >{}
 >_____________
+
+
 
 

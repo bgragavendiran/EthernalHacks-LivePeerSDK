@@ -25,6 +25,7 @@
 import requests
 import json
 
+
 class LivePeerSDK:
     # ASSET ENDPOINTS
     __IMPORT_ASSET = 'https://livepeer.com/api/asset/import'
@@ -61,7 +62,7 @@ class LivePeerSDK:
         dic = {"name": name}
         data = json.dumps(dic)
         r = requests.post(url=self.__REQUEST_UPLOAD, headers={'Authorization': 'Bearer ' + self.APIKEY,
-                                                            'Content-Type': 'application/json'}, data=data)
+                                                              'Content-Type': 'application/json'}, data=data)
         result = json.loads(r.text)
         # print(result["url"])
         self.__currentAssetURL = result["url"]
@@ -266,23 +267,5 @@ class LivePeerSDK:
             return (r.text)
 
 
-# Press the green button in the gutter to run the script.
-# if __name__ == '__main__':
-#     help(LivePeerSDK)
-#     LivePeer=LivePeerSDK("799ec2b2-9108-434d-91ac-abec0b9b0f09")
-#     for asset in LivePeer.listAssets():
-#         print(asset["id"])
-    # vh=livepeer.listAssets()
-    # vh=livepeer.listAssets()
-    # print(vh)
-    # print(type(vh))
-    # for x in vh:
-    #     print(x)
-    #
-    # vh=livepeer.createUploadUrl("test")
-    # print(type(vh))
-    # for i in list(vh):
-    #     print(i)
-        # for x,y in i.items():
-        #     print(x,y)
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+if __name__ == '__main__':
+    pass

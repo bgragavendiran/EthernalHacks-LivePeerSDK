@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+README.rst
+pyproject.toml
+setup.py
+LivePeerSDKPython/LivePeerSDK.egg-info/PKG-INFO
+LivePeerSDKPython/LivePeerSDK.egg-info/SOURCES.txt
+LivePeerSDKPython/LivePeerSDK.egg-info/dependency_links.txt
+LivePeerSDKPython/LivePeerSDK.egg-info/requires.txt
+LivePeerSDKPython/LivePeerSDK.egg-info/top_level.txt

@@ -1,3 +1,21 @@
+Metadata-Version: 2.1
+Name: LivePeerSDK
+Version: 0.7
+Summary: UNKNOWN
+Home-page: https://pypi.org/project/LivePeerSDK/
+Author: Ragavendiran Balasubramanian
+Author-email: bgragavendiran@gmail.com
+License: MIT
+Project-URL: Git Link, https://github.com/RAGANITHI/EthernalHacks-LivePeerSDK
+Keywords: LivePeerSDK
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
 # LivePeerSDK
 ## Make LivePeerAPICalls from Python
 ## License : MIT
@@ -252,5 +270,7 @@ _______________
 >:returns
 >{}
 >_____________
+
+
 
 

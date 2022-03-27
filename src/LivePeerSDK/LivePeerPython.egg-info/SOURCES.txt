@@ -1,6 +1,8 @@
 LICENSE.txt
+MANIFEST.in
+README.md
 README.rst
-setup.cfg
+pyproject.toml
 setup.py
 LivePeerSDKPython/LivePeerPython.egg-info/PKG-INFO
 LivePeerSDKPython/LivePeerPython.egg-info/SOURCES.txt
