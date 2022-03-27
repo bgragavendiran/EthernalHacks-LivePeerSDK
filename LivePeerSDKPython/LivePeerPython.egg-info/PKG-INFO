@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
-Name: LivePeerSDKPython
-Version: 0.2
+Name: LivePeerPython
+Version: 0.3
 Summary: UNKNOWN
 Home-page: https://github.com/RAGANITHI/EthernalHacks-LivePeerSDK
 Author: Ragavendiran Balasubramanian
@@ -8,8 +8,12 @@ Author-email: bgragavendiran@gmail.com
 License: MIT
 Keywords: LivePeerSDKPython
 Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
 Requires-Python: >=3
 Description-Content-Type: text/x-rst
+License-File: LICENSE.txt
 
-UNKNOWN
+README.md
 

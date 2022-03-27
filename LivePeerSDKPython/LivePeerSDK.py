@@ -10,6 +10,7 @@
 # to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 # copies of the Software, and to permit persons to whom the Software is
 # furnished to do so, subject to the following conditions:
+#    *)The owner and source contributors names and details  shall not to be removed from the project
 #
 # The above copyright notice and this permission notice shall be included in all
 # copies or substantial portions of the Software.
@@ -68,7 +69,13 @@ class LivePeerSDK:
 
     def exportAssetToIPFS(self, assetID):
         '''EXPORT A SPECIFIC ASSET ID TO IPFS IT INITIALIZES A CLOUD ASYNC CALL IN LIVEPEER WHICH CREATES A RESPECTIVE TASK ID
-        "assetID obtained from createUploadURL(name)"'''
+        "assetID obtained from createUploadURL(name)
+        :param
+        "assetID":"$AssetID"
+
+        :returns
+        {}
+        '''
         dic = {"ipfs": {}}
         data = json.dumps(dic)
         r = requests.post(self.__EXPORT_ASSET + assetID + '/export',
@@ -81,6 +88,9 @@ class LivePeerSDK:
         :param
         "url":"$EXTERNAL_URL",
         "name":"Example name\"
+
+        :returns
+        {}
         """
         dic = {"name": name, "url": url}
         data = json.dumps(dic)
@@ -136,7 +146,7 @@ class LivePeerSDK:
 
         FOR EXPORT
         {
-        'id':<id>,
+        'id':<taskID>,
         'type':<type>,
         'output': {'export': {'ipfs': {'videoFileCid':<videoFileCid>,'nftMetadataCid':<nftMetadataCid>,'videoFileUrl':<videoFileUrl>,'videoFileGatewayUrl':<videoFileGatewayUrl>,'nftMetadataUrl':<nftMetadataUrl>,'nftMetadataGatewayUrl':<nftMetadataGatewayUrl>,'params': {'export': {'ipfs': {<ipfsMetadata>}}},'status': {'phase':<phase>,'updatedAt': <timestamps>},'userId':<userId>,'createdAt': <timestamps>,'inputAssetId':<inputAssetId>}
         }
@@ -246,7 +256,10 @@ class LivePeerSDK:
         """Create a new Direct Upload URL  to directly upload a video Asset to Livepeer
             :param
             "filePATH":"PASS THE FILE PATH OF VIDEO IN H264 and AAC codec
-            "assetURL":ASSET URL FOR THE FILE\""""
+            "assetURL":ASSET URL FOR THE FILE
+            :returns
+            {}
+        \""""
         self.__currentAssetURL = assetURL
         with open(filePATH, 'rb') as fp:
             r = requests.put(self.__currentAssetURL, headers={'Content-Type': 'video/mp4'}, data=fp)
@@ -254,9 +267,11 @@ class LivePeerSDK:
 
 
 # Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    help(LivePeerSDK)
-    LivePeerSDK("sadunn")
+# if __name__ == '__main__':
+#     help(LivePeerSDK)
+#     LivePeer=LivePeerSDK("799ec2b2-9108-434d-91ac-abec0b9b0f09")
+#     for asset in LivePeer.listAssets():
+#         print(asset["id"])
     # vh=livepeer.listAssets()
     # vh=livepeer.listAssets()
     # print(vh)
